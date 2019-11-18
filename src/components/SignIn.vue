@@ -141,7 +141,7 @@
                                 type="button"
                                 @click="handleClickBack"
                                 block
-                                class="capitalize-text"
+                                class="no-transform-text"
                                 color="primary"
                                 v-html="$vuetify.lang.t('$vuetify.backLogin')"
                             ></v-btn>

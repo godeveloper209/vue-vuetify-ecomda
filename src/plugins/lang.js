@@ -2,12 +2,12 @@ const messages = {
     en: {
       $vuetify: {
         dataIterator: {
-          rowsPerPageText: 'Results per page:',
+          rowsPerPageText: 'Results per page',
           pageText: '{0}-{1} of {2}',
           
         },
         dataTable:{
-          itemsPerPageText: 'Items per age',
+          itemsPerPageText: 'Results per page',
           sortDescending: 'sort descending',
           ariaLabel: {
             sortNone: 'sort none',
@@ -50,6 +50,13 @@ const messages = {
         savedSearches: "Saved searches",
         newestProducts: "Newest products from your searches",
         savedProducts: "Saved products",
+        noSavedSearch:"No searches saved yet",
+        noSavedProduct: "No new products for your searches yet",
+        noSavedNewProduct:"No saved products yet",
+        infoForSearchBox:"With the quick search you can search product names and<br/>product titles of our newly identified products. Thereafter<br />you can refine your search: For example,<br /> by limiting the results to certain product<br /> categories, countries or brands/manufacturers.",
+        infoForSavedSearch: "Once you're done with configuring your search,<br/>you can save it. This helps in re-using<br /> the search and allows us to notify you<br /> via email when new products are available.",
+        infoForSavedNewProduct: "Here you can constantly see the newest products<br/> that your searches identify.",
+        infoForSavedProduct:"When you find a product that you'd like to<br/> within the results lists and get back to it here.",
         more: "More",
         startNewSearch: "Start new search",
         configureSearch: "Configure search",
@@ -107,11 +114,11 @@ const messages = {
     de: {
       $vuetify: {
         dataIterator: {
-          rowsPerPageText: 'Ergebnisse pro Seite:',
-          pageText: '{0}-{1} av {2}',
+          rowsPerPageText: 'Ergebnisse pro Seite',
+          pageText: '{0}-{1} aus {2}',
         },
         dataTable:{
-          itemsPerPageText: 'Items per age',
+          itemsPerPageText: 'Ergebnisse pro Seite',
           
           ariaLabel: {
             sortNone: 'sort none',
@@ -135,7 +142,7 @@ const messages = {
         passwordForgotten: "Probleme beim Einloggen?",
         emailPwdWrong: "Es tut uns leid. E-Mail oder Passwort ist falsch.",
         problemLogin: "Probleme beim Einloggen",
-        requestSupport: "Dann senden Sie bitte eine E-Mail an hello@ecomda.de.<br> Wir werden uns schnellstmöglich bei Ihnen melden",
+        requestSupport: "Dann senden Sie bitte eine E-Mail an hello@ecomda.de.<br> Wir werden uns schnellstmöglich bei Ihnen melden.",
         backLogin: "Zurück zum Login",
         feedbackWelcome: "Feedback welcome!",
         askAdditional: "Sie wünschen sich eine zusätzliche Funktion? Oder etwas funktioniert nicht, wie gedacht? Dann senden Sie uns gern eine Nachricht. Wir melden uns schnellstmöglich bei Ihnen!",
@@ -154,6 +161,13 @@ const messages = {
         savedSearches: "Gespeicherte Suchen",
         newestProducts: "Neueste Produkte aus Ihren Suchen",
         savedProducts: "Gemerkte Produkte",
+        noSavedSearch:"Bisher keine Suchen angelegt",
+        noSavedProduct: "Bisher keine neuen Produkte zu Ihren Suchen",
+        noSavedNewProduct:"Bisher keine Produkte auf die Merkliste gesetzt",
+        infoForSearchBox:"Mit der Schnellsuche können Sie in Produktnamen und -titeln<br />neuer Produkte suchen. Im Anschluss können Sie die Suche<br />verfeinern: Beispielsweise durch Einschränkung auf bestimmte<br />Produktkategorien, Länder oder Hersteller/Marken.",
+        infoForSavedSearch: "Wenn Sie eine Suche fertig konfiguriert haben,<br />können Sie die Suche speichern. Dadurch<br />können Sie die Suche immer wieder verwenden und sich<br />per E-Mail über neue Suchergebnisse benachrichtigen lassen.",
+        infoForSavedNewProduct: "Hier sehen Sie regelmäßig die neuesten Produkte,<br />die Ihre gespeicherten Suchen liefern.",
+        infoForSavedProduct:"Wenn Sie ein Produkt finden, das Sie sich später<br />noch einmal genauer anschauen möchten,<br />können Sie es auf die Merkliste setzen<br />und hier wiederfinden.",
         more: "Mehr",
         startNewSearch: "Neue Suche starten",
         configureSearch: "Suche anpassen",
@@ -195,7 +209,7 @@ const messages = {
         anylize:"Analysieren",
         forward:"Weiterleiten",
         download:"Download",
-        saveForLater:"Merken",
+        saveForLater:"Zu Merkliste hinzufügen",
         noNewProducts:"Keine neuen Produkte für diese Suchparameter verfügbar.",
         moreThanThousand:"Mehr als 1000 Suchergebnisse",
         infoMoreThanThousand:"Ihre Suche hat mehr als 1000 Produkte geliefert, es werden nur die neuesten 1000 Produkte angezeigt.",

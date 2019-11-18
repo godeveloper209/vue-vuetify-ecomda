@@ -22,11 +22,8 @@
                     </v-btn>
                 </template>
                 <v-card>
-                    <v-card-text class="black--text">
-                        Mit der Schnellsuche können Sie in Produktnamen und -titeln
-                        <br />neuer Produkte suchen. Im Anschluss können Sie die Suche
-                        <br />verfeinern: Beispielsweise durch Einschränkung auf bestimmte
-                        <br />Produktkategorien, Länder oder Hersteller/Marken.
+                    <v-card-text class="black--text" v-html="$vuetify.lang.t('$vuetify.infoForSearchBox')">
+                        
                     </v-card-text>
                 </v-card>
             </v-tooltip>

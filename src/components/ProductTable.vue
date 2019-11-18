@@ -119,7 +119,7 @@
                         show-select
                         :single-select="false"
                         :search="search"
-                        no-data-text="Keine neuen Produkte für diese Suchparameter verfügbar."
+                        :no-data-text="$vuetify.lang.t('$vuetify.noNewProducts')"
                         :must-sort="true"
                         :sort-by.sync="sortBy"
                         sort-desc

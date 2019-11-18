@@ -21,7 +21,7 @@
                                     <v-btn
                                         block
                                         color="primary"
-                                        class="capitalize-text three-box-header"
+                                        class="no-transform-text three-box-header"
                                         depressed
                                         @click="handleMoreSavedSearches"
                                         v-on="on"
@@ -29,16 +29,8 @@
                                     ></v-btn>
                                 </template>
                                 <v-card>
-                                    <v-card-text class="black--text">
-                                        Wenn Sie eine Suche fertig konfiguriert
-                                        haben,
-                                        <br />können Sie die Suche speichern.
-                                        Dadurch
-                                        <br />können Sie die Suche immer
-                                        wieder verwenden und sich
-                                        <br />per E-Mail
-                                        über neue Suchergebnisse benachrichtigen
-                                        lassen.
+                                    <v-card-text class="black--text" v-html="$vuetify.lang.t('$vuetify.infoForSavedSearch')">
+                                        
                                     </v-card-text>
                                 </v-card>
                             </v-tooltip>
@@ -64,7 +56,7 @@
                                         </v-list-item-content>
                                     </v-list-item>
                                 </v-list-item-group>
-                                <p v-else class="text-center">Bisher keine Suchen angelegt</p>
+                                <p v-else class="text-center" v-html="$vuetify.lang.t('$vuetify.noSavedSearch')"></p>
                             </v-card-text>
 
                             <v-card-actions v-if="savedSearches.length >= 5">
@@ -97,10 +89,7 @@
                                     ></v-btn>
                                 </template>
                                 <v-card>
-                                    <v-card-text class="black--text">
-                                        Hier sehen Sie regelmäßig die neuesten
-                                        Produkte,
-                                        <br />die Ihre gespeicherten Suchen liefern.
+                                    <v-card-text class="black--text" v-html="$vuetify.lang.t('$vuetify.infoForSavedNewProduct')">
                                     </v-card-text>
                                 </v-card>
                             </v-tooltip>
@@ -132,9 +121,7 @@
                                         </v-list-item-content>
                                     </v-list-item>
                                 </v-list-Item-group>
-                                <p v-else class="text-center">
-                                    Bisher keine neuen Produkte zu Ihren
-                                    Suchen
+                                <p v-else class="text-center" v-html="$vuetify.lang.t('$vuetify.noSavedNewProduct')">
                                 </p>
                             </v-card-text>
 
@@ -153,7 +140,7 @@
                                     <v-btn
                                         block
                                         color="primary"
-                                        class="capitalize-text three-box-header"
+                                        class="no-transform-text three-box-header"
                                         depressed
                                         @click="handleMoreFavourites"
                                         v-on="on"
@@ -161,12 +148,7 @@
                                     >Gemerkte Produkte</v-btn>
                                 </template>
                                 <v-card>
-                                    <v-card-text class="black--text">
-                                        Wenn Sie ein Produkt finden, das Sie sich
-                                        später
-                                        <br />noch einmal genauer anschauen möchten,
-                                        <br />können Sie es auf die Merkliste setzen
-                                        <br />und hier wiederfinden.
+                                    <v-card-text class="black--text" v-html="$vuetify.lang.t('$vuetify.infoForSavedProduct')">
                                     </v-card-text>
                                 </v-card>
                             </v-tooltip>
@@ -191,9 +173,7 @@
                                         </v-list-item-content>
                                     </v-list-item>
                                 </v-list-Item-group>
-                                <p v-else class="text-center">
-                                    Bisher keine Produkte auf die
-                                    Merkliste gesetzt
+                                <p v-else class="text-center" v-html="$vuetify.lang.t('$vuetify.noSavedProduct')">
                                 </p>
                             </v-card-text>
                             <v-card-actions v-if="favourites.length >= 5">

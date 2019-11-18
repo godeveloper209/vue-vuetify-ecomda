@@ -3,8 +3,11 @@
         <a href="#" class="feedback-form-btn btn btn-danger btn-lg" @click="toggleFeedback">Feedback</a>
         <div :class="'feedback_form_area ' + (feedbackStatus? 'open': 'close')">
             <div class="feedback_form_area_inner">
-                <p class="text-center no-transform-text">
+                <p class="text-center no-transform-text" v-if="!sentFeedback">
                         <strong v-html="$vuetify.lang.t('$vuetify.feedbackWelcome')"></strong>
+                </p>
+                <p class="text-center no-transform-text" v-else>
+                        <strong v-html="$vuetify.lang.t('$vuetify.thanksForFeedback')"></strong>
                 </p>
                 <div v-if="!sentFeedback">
                     <p v-html="$vuetify.lang.t('$vuetify.askAdditional')">
@@ -33,7 +36,7 @@
                 </div>
                 <div v-else>
                     <p v-html="$vuetify.lang.t('$vuetify.askOtherIdeas')">
-                        Sie haben noch weitere Ideen oder Wünsche?
+                        
                     </p>
                     <p v-html="$vuetify.lang.t('$vuetify.contactUsAnytime')">
                     </p>
@@ -46,7 +49,7 @@
                     <p class="pb-4 mb-4">
                         {{$vuetify.lang.t('$vuetify.phone')}}: (+49) 521/448 147 510
                         <br />
-                        {{$vuetify.lang.t('$vuetifyce.cell')}}: (+49) 179/78 46 357
+                        {{$vuetify.lang.t('$vuetify.cell')}}: (+49) 179/78 46 357
                         <br />
                         {{$vuetify.lang.t('$vuetify.mail')}}: thomas@ecomda.de
                         <br />

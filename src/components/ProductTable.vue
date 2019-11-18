@@ -145,7 +145,7 @@
                                 <template v-slot:activator="{ on }">
                                     <span
                                         v-on="on"
-                                        v-html="$vuetify.lang.t('$vuetify.availableSince')"
+                                        v-html="$vuetify.lang.t('$vuetify.availableSinceForTable')"
                                     ></span>
                                 </template>
                                 <span>
@@ -203,7 +203,7 @@
                                 right
                             >
                                 <template v-slot:activator="{ on }">
-                                    <span v-on="on" v-html="$vuetify.lang.t('$vuetify.brandManufacture')"></span>
+                                    <span v-on="on" v-html="$vuetify.lang.t('$vuetify.brandManufactureForTable')"></span>
                                 </template>
                                 <span>Kategorie, der ein Produkt zugeordnet ist</span>
                                 <br />

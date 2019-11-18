@@ -65,8 +65,8 @@ export default {
 
         handleClickSearch() {
             let currentDate = new Date();
-            // if (this.searchKeyword == null || this.searchKeyword == '')
-            //     this.searchKeyword = ' ';
+            if (this.searchKeyword == null || this.searchKeyword == '')
+                this.searchKeyword = ' ';
             this.saveCurrentSearch({
                 search: {
                     keyword: this.searchKeyword,

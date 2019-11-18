@@ -243,7 +243,8 @@ const mutations = {
                 rankPast: 'Rank 30 days ago',
                 rating: item.ProductRatingNumber,
                 ratingQuality: !item.ProductRatingAverage || item.ProductRatingAverage == '0' ? '-' : item.ProductRatingAverage,
-                price: !item.Price || item.Price.toFixed(2) == '0.00' ? 'n.a.' : item.Price.toFixed(2),
+                // price: !item.Price || item.Price[0].toFixed(2) == '0.00' ? 'n.a.' : item.Price[0].toFixed(2),
+                price: item.Price,
                 asin: item.ASIN,
                 saleEstimate: !item.SaleEstimate || item.SaleEstimate=="n.a."?  '0' :item.SaleEstimate,
                 bestSellerRankRC: item.BestsellerRankRootCategory
@@ -275,7 +276,8 @@ const mutations = {
                 rankPast: 'Rank 30 days ago',
                 rating: item.ProductRatingNumber,
                 ratingQuality: !item.ProductRatingAverage || item.ProductRatingAverage == '0' ? '-' : item.ProductRatingAverage,
-                price: !item.Price || item.Price.toFixed(2) == '0.00' ? 'n.a.' : item.Price.toFixed(2),
+                // price: !item.Price || item.Price[0].toFixed(2) == '0.00' ? 'n.a.' : item.Price[0].toFixed(2),
+                price: item.Price,
                 asin: item.ASIN,
                 saleEstimate: !item.SaleEstimate || item.SaleEstimate=="n.a."?  '0' :item.SaleEstimate,
                 bestSellerRankRC: item.BestsellerRankRootCategory
@@ -302,7 +304,8 @@ const mutations = {
                 rankPast: 'Rank 30 days ago',
                 rating: item.ProductRatingNumber,
                 ratingQuality: !item.ProductRatingAverage || item.ProductRatingAverage == '0' ? '-' : item.ProductRatingAverage,
-                price: !item.Price || item.Price.toFixed(2) == '0.00' ? 'n.a.' : item.Price.toFixed(2),
+                // price: !item.Price || item.Price[0].toFixed(2) == '0.00' ? 'n.a.' : item.Price[0].toFixed(2),
+                price: item.Price,
                 asin: item.ASIN,
                 saleEstimate: !item.SaleEstimate || item.SaleEstimate=="n.a."?  '0' :item.SaleEstimate,
                 bestSellerRankRC: item.BestsellerRankRootCategory

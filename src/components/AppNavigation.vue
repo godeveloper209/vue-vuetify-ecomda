@@ -172,7 +172,7 @@ export default {
             drawer: false,
             dialog: false,
             languages: ['Deutsch', 'English'],
-            CountryFlag: 'us',
+            CountryFlag: null,
         };
     },
     computed: {
@@ -187,7 +187,6 @@ export default {
     },
     methods: {
         ...mapGetters(['isVisited', 'getLang']),
-
         ...mapActions(['logout', 'setVisited', 'setLang']),
         //logout
         handleLogout() {
@@ -231,6 +230,7 @@ export default {
     },
     watch :{
         currentLang: function(newVal, oldVal){
+            console.log('watch', newVal);
             this.setCurrentLangFlag(newVal);
         }
     },
@@ -239,6 +239,8 @@ export default {
             this.dialog = true;
             this.setVisited(false);
         }
+        this.setCurrentLangFlag(this.getLang());
+        
     }
 };
 </script>

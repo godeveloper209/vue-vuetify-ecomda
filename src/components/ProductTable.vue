@@ -72,7 +72,8 @@
                         <v-list-item-content>
                             <v-list-item-title
                                 class="hidden-sm-and-down mt-2"
-                            >Zu Merkliste hinzufügen</v-list-item-title>
+                                v-html="$vuetify.lang.t('$vuetify.saveForLater')"
+                            ></v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
                 </v-toolbar-items>

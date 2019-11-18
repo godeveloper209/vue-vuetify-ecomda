@@ -2,11 +2,11 @@
     <v-card class="caption">
         <v-toolbar color="primary" dark flat>
             <v-spacer></v-spacer>
-            <v-toolbar-title class="subtitle-1">Suche speichern und Alert einrichten</v-toolbar-title>
+            <v-toolbar-title class="subtitle-1" v-html="$vuetify.lang.t('$vuetify.saveSearchCreateAlert')"></v-toolbar-title>
             <v-spacer></v-spacer>
         </v-toolbar>
         <div class="mb-1 pt-4 px-4">
-            <p class="body-2 black--text">Der folgende Name identifiziert Ihre Suche in der Übersicht der gespeicherten Suchen:</p>
+            <p class="body-2 black--text" v-html="$vuetify.lang.t('$vuetify.infoForSearchName')"></p>
             <v-text-field
                 v-model="searchName"
                 label="Name der Suche"
@@ -15,20 +15,20 @@
                 class="mb-1 small-input"
                 :hide-details="true"
             ></v-text-field>
-            <p v-if="isEmptySearchName" class="red--text">Bitte geben Sie der Suche einen Namen bevor Sie die Suche speichern</p>
+            <p v-if="isEmptySearchName" class="red--text" v-html="$vuetify.lang.t('$vuetify.errorEmptySearchName')"></p>
             <!-- <p class="red--text">Did you fill the search keyword in the prev step?</p> -->
-            <div class="body-2 black--text mt-4 pt-4">Wöchentliche E-Mail-Benachrichtigung über neu erscheinende Produkte:</div>
+            <div class="body-2 black--text mt-4 pt-4" v-html="$vuetify.lang.t('$vuetify.inforForWeelyEmailing')"></div>
             <v-radio-group v-model="row" row class="small-radio" hide-details>
-                <v-radio label="Ja" value="rdYes"></v-radio>
+                <v-radio :label="$vuetify.lang.t('$vuetify.yes')" value="rdYes"></v-radio>
                 <v-radio
-                    label="Nein (ich möchte neue Produkte mit meinem Browser anschauen)"
+                    :label="$vuetify.lang.t('$vuetify.noAndOnlyNewProducts')"
                     value="rdNo"
                 ></v-radio>
             </v-radio-group>
         </div>
         <v-card-actions>
             <div class="flex-grow-1"></div>
-            <v-btn color="primary" class="capitalize-text" @click="handleSaveSearch">Speichern</v-btn>
+            <v-btn color="primary" class="capitalize-text" @click="handleSaveSearch">{{$vuetify.lang.t('$vuetify.save')}}</v-btn>
         </v-card-actions>
     </v-card>
 </template>

@@ -2,7 +2,7 @@
     <v-card class="mx-auto">
         <v-toolbar color="primary" dark flat>
             <v-spacer></v-spacer>
-            <v-toolbar-title class="subtitle-1">Gespeicherte Suchen</v-toolbar-title>
+            <v-toolbar-title class="subtitle-1" v-html="$vuetify.lang.t('$vuetify.savedSearches')"></v-toolbar-title>
             <v-spacer></v-spacer>
         </v-toolbar>
         <v-list two-line subheader class="saved-searches-list-container">

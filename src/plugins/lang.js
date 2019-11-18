@@ -97,6 +97,7 @@ const messages = {
         infoMoreThanThousand:"Your search has retrieved more than 1000 products, only the latest 1000 products are shown.",
         infoForSearchName:"The following name identifies the search within the list of saved searches:",
         inforForWeelyEmailing:"Weekly email alert containing newly available products:",
+        errorEmptySearchName: "Bitte geben Sie der Suche einen Namen bevor Sie die Suche speichern",
         yes: "Yes",
         noAndOnlyNewProducts:"No (I want to go through the new products only within my browser)",
         save:"Save"
@@ -200,6 +201,7 @@ const messages = {
         infoMoreThanThousand:"Ihre Suche hat mehr als 1000 Produkte geliefert, es werden nur die neuesten 1000 Produkte angezeigt.",
         infoForSearchName:"Der folgende Name identifiziert Ihre Suche in der Übersicht der gespeicherten Suchen:",
         inforForWeelyEmailing:"Wöchentliche E-Mail-Benachrichtigung über neu erscheinende Produkte:",
+        errorEmptySearchName: "Bitte geben Sie der Suche einen Namen bevor Sie die Suche speichern",
         yes: "Ja",
         noAndOnlyNewProducts:"Nein (ich möchte neue Produkte mit meinem Browser anschauen)",
         save:"Speichern"

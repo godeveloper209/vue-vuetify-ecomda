@@ -612,7 +612,7 @@ export default {
                 this.$refs.inputKeyword.value == undefined ||
                 this.$refs.inputKeyword.value == ' ' ||
                 this.$refs.inputKeyword.value == ' \n' ||
-                this.$refs.inputKeyword.value == '\n') 
+                this.$refs.inputKeyword.value == '\n')
             ) {
                 this.alertDialog = true;
                 this.searchKeyword = '';
@@ -643,6 +643,13 @@ export default {
                 this.$refs.inputKeyword.value == ' ' ||
                 this.$refs.inputKeyword.value == ' \n' ||
                 this.$refs.inputKeyword.value == '\n') 
+                 && 
+                (this.candSelectedCategories == null || 
+                this.candSelectedCategories.length == 0)
+                 && 
+                (this.getSelectedBrands() == null || 
+                this.getSelectedBrands().length == 0
+                )
             ) {
                 this.alertDialog = true;
                 this.searchKeyword = '';

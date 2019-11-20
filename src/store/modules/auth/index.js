@@ -4,7 +4,7 @@ const state = {
     status: 'success',
     token: localStorage.getItem('token') || '',
     user_id: localStorage.getItem('user_id') || '',
-    lang: localStorage.getItem('lang') || 'en',
+    lang: localStorage.getItem('lang') || 'de',
     isVisited: localStorage.getItem('isVisted') || false,
     apiUrlForCheckUser:
         'https://ecoprod.tk/API/API_auth.php?checkUser',
@@ -134,6 +134,8 @@ const actions = {
             localStorage.removeItem('user_id');
             localStorage.removeItem('currentSearch');
             localStorage.removeItem('isVisited');
+            localStorage.removeItem('lang');
+            commit(types.SET_LANG, 'de');
             // localStorage.removeItem('lang');
             delete axios.defaults.headers.common['Authorization'];
             resolve();

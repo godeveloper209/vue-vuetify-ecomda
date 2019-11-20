@@ -15,7 +15,7 @@ Vue.use(Vuetify);
 Vue.use(VueI18n)
 
 const i18n = new VueI18n({
-  locale: 'en', // set locale
+  locale: 'de', // set locale
   messages, // set locale messages
 })
 
@@ -61,8 +61,10 @@ new Vue({
     vuetify,
     render: h => h(App),
     mounted(){
-        this.$i18n.locale = this.$store.state.Auth.lang;
+        if(!localStorage.getItem('lang'))
         this.$store.dispatch('setLang', 'de');
+        this.$i18n.locale = this.$store.state.Auth.lang;
+        
         this.$store.watch(({Auth}) => Auth.lang, lang => this.$i18n.locale = lang)
     }
 }).$mount('#app');
